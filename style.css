@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Kumar+One+Outline&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AR:wght@100..400&family=Roboto+Slab:wght@100..900&display=swap');
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.card {
+    max-width: 790px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 16px #000;
+    border-radius: 8px;
+}
+  
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px auto;
+}
+  
+.left-introduction, 
+.right-introduction {
+    flex: 1;
+    padding: 10px;
+}
+  
+.left-introduction {
+    max-width: 65%;
+}
+  
+.right-introduction {
+    max-width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.left-achievement, 
+.right-achievement {
+    flex: 1;
+    padding: 10px;
+}
+  
+.left-achievement {
+    max-width: 30%;
+}
+  
+.right-achievement {
+    max-width: 70%;
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    text-shadow: 3px 2px 1px #808080;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: "Roboto Slab", serif;
+    text-shadow: 3px 2px 1px #808080;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+  
+p {
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 1em;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.65;
+}
+  
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.85em;
+    line-height: 1.65;
+}
+
+ul li {
+    font-family: "Roboto Slab", serif;
+    position: relative;
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+}
+
+ul li::before {
+    content: '✔';
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    background-color: black; 
+    color: white; 
+    text-align: center;
+    line-height: 20px; /* Menyelaraskan simbol checklist secara vertikal */
+    border-radius: 50%; /* Membuat bullet melingkar */
+    position: absolute;
+    left: 0; /* Posisi dari kiri */
+    top: 50%; /* Vertikal tengah */
+    transform: translateY(-50%); /* Penyesuaian posisi */
+}
+
+.right-achievement span {
+    font-weight: 700;
+}
+  
+.btn {
+    margin-top: 1em;
+    display: flex;
+}
+
+.btn p {
+    margin: 5px 15px;
+}
+  
+button {
+    font-family: "Roboto Slab", serif;
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #0000006b;
+    transition: background-color 0.3s, color 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+button:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: none;
+}
+
+.whatsapp {
+    font-size: 0.8em;
+}
+
+.whatsapp i {
+    font-size: 1.7em;
+    margin-right: 3px;
+}
+
+.linkedin {
+    font-size: 0.9em;
+}
+  
+img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+  
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .right-introduction {
+        order: 1;
+        max-width: 90%;
+    }
+
+    .left-introduction {
+        order: 2;
+        max-width: 90%;
+    }
+
+    .left-achievement {
+        order: 3;
+        max-width: 90%;
+    }
+
+    .right-achievement {
+        order: 4;
+        max-width: 90%;
+    }
+}
