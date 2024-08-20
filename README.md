@@ -45,4 +45,4 @@ Proyek ini adalah sebuah portofolio pribadi yang dibuat sebagai bagian dari tuga
 ## Kontak
 
 Jika Anda memiliki pertanyaan atau umpan balik, silakan hubungi:
-- **Email**: [luqmankurniasandy@gmail.com](mailto:luqmankurniasandy@gmail.com)
+- **Email**: [Klik di sini](mailto:luqmankurniasandy@gmail.com)
